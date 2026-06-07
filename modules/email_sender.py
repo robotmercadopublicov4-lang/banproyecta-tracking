@@ -16,7 +16,7 @@ def enviar_correo(destinatario, empresa):
     asunto = "Propuesta de Factoring para Finanzas"
 
     # URL TRACKING APERTURA
-    tracking_url = f"https://https://TU-APP.onrender.com/track?email={destinatario}&t={time.time()}"
+    tracking_url = f"https://banproyecta-tracking.onrender.com/track?email={destinatario}&t={time.time()}"
 
     # LINK REAL
     link_real = "https://www.banproyecta.cl/"
@@ -25,7 +25,7 @@ def enviar_correo(destinatario, empresa):
     destino_codificado = urllib.parse.quote(link_real)
 
     # LINK TRACKEADO
-    click_url = f"https://bloomers-skid-pueblo.ngrok-free.dev/click?email={destinatario}&destino={destino_codificado}"
+    click_url = f"https://banproyecta-tracking.onrender.com/click?email={destinatario}&destino={destino_codificado}"
 
     html = f"""
     <html>
